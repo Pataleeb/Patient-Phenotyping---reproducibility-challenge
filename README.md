@@ -1,1 +1,5 @@
-# Patient-Phenotyping---reproducibility-challenge
+# Patient-Phenotyping-reproducibility-challenge
+
+This project reproduces and extends the study Comparing Deep Learning and Concept Extraction–Based Methods for Patient Phenotyping from Clinical Narratives by Gehrmann et al. (2018). Using MIMIC-III discharge summaries, we implemented the original baseline models—Bag-of-Words, n-gram features, and a cTAKES-style concept extraction pipeline (reproduced using scispaCy) along with a Convolutional Neural Network (CNN) similar to the original architecture. 
+
+We also added two ablation models, BiLSTM and BiGRU, to explore sequence-based approaches. All models were evaluated on ten clinical phenotypes using precision, recall, F1-score, and AUC. Classical models reproduced successfully, while neural models underperformed the original due to limited compute resources and reduced word2vec embedding quality. This repository includes preprocessing scripts, model implementations, evaluation results, and saliency analyses supporting our reproducibility findings. 
